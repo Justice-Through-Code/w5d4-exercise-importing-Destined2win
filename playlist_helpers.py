@@ -46,7 +46,7 @@ So, if 'Controversy' has 0 plays so far, it should now be increased to 1
 
 def play_track(playlist, track=1):
     if track < 1 or track > len(playlist):
-        print(f"Track {track} is not in the playlist.")
+        return f"Track {track} is not in the playlist."
     else:
         track_index = track - 1
         song = playlist[track_index]
